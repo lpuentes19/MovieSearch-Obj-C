@@ -12,6 +12,7 @@
 		951CA6041F2686DC002DF394 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 951CA6031F2686DC002DF394 /* Assets.xcassets */; };
 		951CA6071F2686DC002DF394 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 951CA6051F2686DC002DF394 /* LaunchScreen.storyboard */; };
 		95D620291F279CFD00945B59 /* LPMovie.m in Sources */ = {isa = PBXBuildFile; fileRef = 95D620281F279CFD00945B59 /* LPMovie.m */; };
+		95D6202D1F27A83B00945B59 /* LPMovieController.m in Sources */ = {isa = PBXBuildFile; fileRef = 95D6202C1F27A83B00945B59 /* LPMovieController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,8 @@
 		951CA6081F2686DC002DF394 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		95D620271F279CFD00945B59 /* LPMovie.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LPMovie.h; sourceTree = "<group>"; };
 		95D620281F279CFD00945B59 /* LPMovie.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LPMovie.m; sourceTree = "<group>"; };
+		95D6202B1F27A83B00945B59 /* LPMovieController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LPMovieController.h; sourceTree = "<group>"; };
+		95D6202C1F27A83B00945B59 /* LPMovieController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LPMovieController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +59,8 @@
 			isa = PBXGroup;
 			children = (
 				951CA6001F2686DC002DF394 /* Main.storyboard */,
+				95D6202B1F27A83B00945B59 /* LPMovieController.h */,
+				95D6202C1F27A83B00945B59 /* LPMovieController.m */,
 				95D6202A1F279D1200945B59 /* Models */,
 				951CA60E1F2686E8002DF394 /* Resources */,
 			);
@@ -158,6 +163,7 @@
 			files = (
 				95D620291F279CFD00945B59 /* LPMovie.m in Sources */,
 				951CA5FD1F2686DC002DF394 /* AppDelegate.swift in Sources */,
+				95D6202D1F27A83B00945B59 /* LPMovieController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
