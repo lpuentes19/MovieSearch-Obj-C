@@ -11,6 +11,7 @@
 		951CA6021F2686DC002DF394 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 951CA6001F2686DC002DF394 /* Main.storyboard */; };
 		951CA6041F2686DC002DF394 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 951CA6031F2686DC002DF394 /* Assets.xcassets */; };
 		951CA6071F2686DC002DF394 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 951CA6051F2686DC002DF394 /* LaunchScreen.storyboard */; };
+		95D620291F279CFD00945B59 /* LPMovie.m in Sources */ = {isa = PBXBuildFile; fileRef = 95D620281F279CFD00945B59 /* LPMovie.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,8 @@
 		951CA6031F2686DC002DF394 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		951CA6061F2686DC002DF394 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		951CA6081F2686DC002DF394 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		95D620271F279CFD00945B59 /* LPMovie.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LPMovie.h; sourceTree = "<group>"; };
+		95D620281F279CFD00945B59 /* LPMovie.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LPMovie.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +56,7 @@
 			isa = PBXGroup;
 			children = (
 				951CA6001F2686DC002DF394 /* Main.storyboard */,
+				95D6202A1F279D1200945B59 /* Models */,
 				951CA60E1F2686E8002DF394 /* Resources */,
 			);
 			path = "MovieSearch-Obj-C";
@@ -67,6 +71,15 @@
 				951CA6081F2686DC002DF394 /* Info.plist */,
 			);
 			name = Resources;
+			sourceTree = "<group>";
+		};
+		95D6202A1F279D1200945B59 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				95D620271F279CFD00945B59 /* LPMovie.h */,
+				95D620281F279CFD00945B59 /* LPMovie.m */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -102,6 +115,7 @@
 					951CA5F81F2686DC002DF394 = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = H9L7P6ZCN6;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -142,6 +156,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				95D620291F279CFD00945B59 /* LPMovie.m in Sources */,
 				951CA5FD1F2686DC002DF394 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -267,11 +282,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = H9L7P6ZCN6;
 				INFOPLIST_FILE = "MovieSearch-Obj-C/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.MovieSearch-Obj-C";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MovieSearch-Obj-C/MovieSearch-Obj-C-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -280,11 +298,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = H9L7P6ZCN6;
 				INFOPLIST_FILE = "MovieSearch-Obj-C/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.MovieSearch-Obj-C";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MovieSearch-Obj-C/MovieSearch-Obj-C-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -308,6 +328,7 @@
 				951CA60D1F2686DC002DF394 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
