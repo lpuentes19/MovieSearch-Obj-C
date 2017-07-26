@@ -13,6 +13,8 @@
 		951CA6071F2686DC002DF394 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 951CA6051F2686DC002DF394 /* LaunchScreen.storyboard */; };
 		95D620291F279CFD00945B59 /* LPMovie.m in Sources */ = {isa = PBXBuildFile; fileRef = 95D620281F279CFD00945B59 /* LPMovie.m */; };
 		95D6202D1F27A83B00945B59 /* LPMovieController.m in Sources */ = {isa = PBXBuildFile; fileRef = 95D6202C1F27A83B00945B59 /* LPMovieController.m */; };
+		95D620301F27BDE500945B59 /* MovieTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95D6202F1F27BDE500945B59 /* MovieTableViewCell.swift */; };
+		95D620351F27C5D500945B59 /* MovieTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95D620341F27C5D500945B59 /* MovieTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,9 @@
 		95D620281F279CFD00945B59 /* LPMovie.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LPMovie.m; sourceTree = "<group>"; };
 		95D6202B1F27A83B00945B59 /* LPMovieController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LPMovieController.h; sourceTree = "<group>"; };
 		95D6202C1F27A83B00945B59 /* LPMovieController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LPMovieController.m; sourceTree = "<group>"; };
+		95D6202F1F27BDE500945B59 /* MovieTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieTableViewCell.swift; sourceTree = "<group>"; };
+		95D620331F27C3C500945B59 /* MovieSearch-Obj-C-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MovieSearch-Obj-C-Bridging-Header.h"; sourceTree = "<group>"; };
+		95D620341F27C5D500945B59 /* MovieTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,9 +64,10 @@
 			isa = PBXGroup;
 			children = (
 				951CA6001F2686DC002DF394 /* Main.storyboard */,
-				95D6202B1F27A83B00945B59 /* LPMovieController.h */,
-				95D6202C1F27A83B00945B59 /* LPMovieController.m */,
+				95D620361F27C62700945B59 /* ViewController */,
+				95D6202E1F27B9FF00945B59 /* ModelController */,
 				95D6202A1F279D1200945B59 /* Models */,
+				95D620311F27BDEE00945B59 /* Views */,
 				951CA60E1F2686E8002DF394 /* Resources */,
 			);
 			path = "MovieSearch-Obj-C";
@@ -71,6 +77,7 @@
 			isa = PBXGroup;
 			children = (
 				951CA5FC1F2686DC002DF394 /* AppDelegate.swift */,
+				95D620331F27C3C500945B59 /* MovieSearch-Obj-C-Bridging-Header.h */,
 				951CA6031F2686DC002DF394 /* Assets.xcassets */,
 				951CA6051F2686DC002DF394 /* LaunchScreen.storyboard */,
 				951CA6081F2686DC002DF394 /* Info.plist */,
@@ -85,6 +92,31 @@
 				95D620281F279CFD00945B59 /* LPMovie.m */,
 			);
 			name = Models;
+			sourceTree = "<group>";
+		};
+		95D6202E1F27B9FF00945B59 /* ModelController */ = {
+			isa = PBXGroup;
+			children = (
+				95D6202B1F27A83B00945B59 /* LPMovieController.h */,
+				95D6202C1F27A83B00945B59 /* LPMovieController.m */,
+			);
+			name = ModelController;
+			sourceTree = "<group>";
+		};
+		95D620311F27BDEE00945B59 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				95D6202F1F27BDE500945B59 /* MovieTableViewCell.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		95D620361F27C62700945B59 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				95D620341F27C5D500945B59 /* MovieTableViewController.swift */,
+			);
+			name = ViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -161,8 +193,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				95D620351F27C5D500945B59 /* MovieTableViewController.swift in Sources */,
 				95D620291F279CFD00945B59 /* LPMovie.m in Sources */,
 				951CA5FD1F2686DC002DF394 /* AppDelegate.swift in Sources */,
+				95D620301F27BDE500945B59 /* MovieTableViewCell.swift in Sources */,
 				95D6202D1F27A83B00945B59 /* LPMovieController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
