@@ -86,8 +86,9 @@ static NSString *const apiKey = @"cf80709bde7dcdd88536ad899c954660";
         completion(movies);
     }]resume];
 }
+
 // Fetching movie images
-- (void)fetchMovieImage:(NSString *)imageURLString completion:(void (^)(UIImage *))completion
+- (void)fetchMovieImage:(NSString * _Nullable)imageURLString completion:(void (^)(UIImage *))completion
 {
     if (!completion) { completion = ^(UIImage *p){}; }
     
@@ -124,11 +125,3 @@ static NSString *const apiKey = @"cf80709bde7dcdd88536ad899c954660";
 }
 
 @end
-
-
-
-
-
-
-
-

@@ -30,8 +30,12 @@ class MovieTableViewCell: UITableViewCell {
         summaryTextView.layer.borderWidth = 0.5
         
         LPMovieController.shared().fetchMovieImage(movie.movieImage) { (image) in
-            DispatchQueue.main.async {
-                self.movieImage.image = image
+            if image == nil {
+                self.movieImage.image = UIImage(named: "noImage")
+            } else {
+                DispatchQueue.main.async {
+                    self.movieImage.image = image
+                }
             }
         }
     }
