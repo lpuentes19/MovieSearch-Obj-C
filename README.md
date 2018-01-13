@@ -13,4 +13,4 @@
 * User can search for any movie within the movie database I used to pull up a review, summary, and image regarding the movie.
 
 ### Disclaimer
-MovieSearch-Obj-C is a personal project created to learn and practice iOS development. It is currently open source to use as a resource for Swift development.
+MovieSearch-Obj-C is a personal project created to learn and practice iOS development. It is currently open source to use as a resource for Objective-C development.
